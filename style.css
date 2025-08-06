@@ -1,0 +1,233 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: #fefefe;
+  padding: 1rem;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff0f8;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ffd6ec;
+}
+
+.logo {
+  height: 60px;
+}
+
+h1 {
+  color: #ff4fb4;
+  font-size: 2rem;
+}
+
+/* Navegación */
+nav a {
+  color: #333;
+  font-weight: 600;
+  text-decoration: none;
+  margin-left: 1rem;
+}
+
+nav a:hover {
+  color: #ff4fb4;
+}
+
+/* Botones rosados */
+button,
+.btn,
+.btn-primary,
+.btn-success {
+  background-color: #ff4fb4 !important;
+  border-color: #ff4fb4 !important;
+  color: white !important;
+  font-weight: bold;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  padding: 0.6rem 1.2rem;
+}
+
+button:hover,
+.btn:hover,
+.btn-primary:hover,
+.btn-success:hover {
+  background-color: #ff3399 !important;
+  border-color: #ff3399 !important;
+}
+
+/* Banner principal */
+.banner {
+  background: url('img/banner1.jpg') no-repeat center center;
+  background-size: cover;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+}
+
+.banner h2 {
+  font-size: 3rem;
+  text-shadow: 1px 1px 5px black;
+  transition: transform 0.3s ease;
+}
+
+.banner h2:hover {
+  transform: scale(1.05);
+}
+
+/* Carrusel tamaño más chico */
+.carousel-section {
+  max-height: 350px;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+.carousel-section img {
+  object-fit: cover;
+  height: 350px;
+}
+
+/* Productos */
+.productos {
+  margin-top: 2rem;
+  padding: 1rem;
+  background: #fff8fb;
+  border-radius: 12px;
+}
+
+.producto {
+  margin-bottom: 1.5rem;
+}
+
+.producto h3 {
+  margin-bottom: 0.3rem;
+  color: #ff4fb4;
+}
+
+/* Sobre Nosotros */
+#nosotros {
+  margin: 3rem 0;
+  text-align: center;
+}
+
+#nosotros h2 {
+  color: #ff4fb4;
+}
+
+/* Contacto */
+.contacto {
+  margin-top: 3rem;
+  padding: 2rem;
+  background-color: #fff0f5;
+  border-radius: 15px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.contacto h2 {
+  color: #ff4fb4;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.contacto form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contacto input,
+.contacto textarea {
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Carrito lateral */
+aside#carrito {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 300px;
+  background: #fff0f8;
+  border-left: 2px solid #ff4fb4;
+  padding: 1.5rem;
+  height: 100vh;
+  overflow-y: auto;
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+  z-index: 999;
+}
+
+aside#carrito.mostrar {
+  transform: translateX(0%);
+}
+
+aside#carrito h2 {
+  color: #ff4fb4;
+}
+
+#lista-carrito {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 1rem;
+}
+
+#lista-carrito li {
+  margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#lista-carrito button {
+  padding: 0.3rem 0.6rem;
+  font-size: 0.8rem;
+  background-color: #ffb3da;
+  border: none;
+  border-radius: 6px;
+  color: #5a003a;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#lista-carrito button:hover {
+  background-color: #ff88cc;
+}
+
+/* Scroll suave para carrito */
+aside#carrito::-webkit-scrollbar {
+  width: 6px;
+}
+
+aside#carrito::-webkit-scrollbar-thumb {
+  background-color: #ff4fb4;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .banner h2 {
+    font-size: 2rem;
+  }
+
+  aside#carrito {
+    width: 100%;
+  }
+}
+
+  
+
+
+
